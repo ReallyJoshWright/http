@@ -1,0 +1,7 @@
+.cache
+app
+compile_commands.json
+*.o
+*.d
+*.so
+*.a
