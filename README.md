@@ -3,6 +3,11 @@
 This is an http library in C++ from scratch. It will contain server and client
 capabilities.
 
+## Dependencies
+- Linux
+- make
+- gcc with c++23 support
+
 ## Examples
 ```c++
 
