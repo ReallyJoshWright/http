@@ -74,10 +74,19 @@ int main() {
 
 ```
 
+## Documentation
+- [websockets](./documentation/websockets.md)
+
 ## Todo
+- add default directory loading for static files
+- finish http protocol implementation
+- add asynchronous options and epoll
+
 - add websockets and file monitor for hot reloading
-- add typescript converter
+- add typescript converter (with its own file monitoring)
+
 - add windows support
-- add asynchronous options
 - add http client
 - add https support
+- add certbot functionality
+- templating for dynamic content
