@@ -1,6 +1,7 @@
 #include <functional>
 #include <cstdlib>
 #include <cstring>
+#include <fstream>
 #include <sstream>
 #include <format>
 #include <string>
@@ -148,6 +149,19 @@ void HttpServer::route(
     map<string, Endpoint> current_map;
     current_map[endpoint] = end;
     endpoints.push_back(current_map);
+}
+
+void HttpServer::serveDir(string directory) {
+    string html;
+    std::ifstream file("./public/index.html");
+    if (file.is_open()) {
+        std::stringstream ss;
+        ss << file.rdbuf();
+        html = ss.str();
+        file.close();
+    } else {
+        return "";
+    }
 }
 
 void HttpServer::acceptClient() {

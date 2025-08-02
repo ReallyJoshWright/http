@@ -74,6 +74,7 @@ public:
         std::function<std::string(std::string endpoint)> handler,
         ContentType content_type
     );
+    void serveDir(std::string directory);
     void acceptClient();
 
 private:

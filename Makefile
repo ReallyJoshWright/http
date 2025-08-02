@@ -4,9 +4,9 @@ STD := -std=c++23
 DEBUG := -g -Wall -Wextra -pedantic
 DEP := -MP -MD
 INC := -I./include
-SRC := src/http_server.cpp src/logger.cpp main.cpp
-OBJ := src/http_server.o src/logger.o main.o
-DEPFILES := src/http_server.d src/logger.d main.d
+SRC := src/http_server.cpp src/logger.cpp src/tcp.cpp main.cpp
+OBJ := src/http_server.o src/logger.o src/tcp.o main.o
+DEPFILES := src/http_server.d src/logger.d src/tcp.d main.d
 
 all: $(TARGET)
 

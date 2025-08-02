@@ -83,14 +83,18 @@ int main() {
 - [websockets](./documentation/websockets.md)
 
 ## Todo
+- implement epoll for tcp connections
+- implement relay messages for tcp
+- add tls support for tcp relay messages
+- add windows support for tcp
+- add Doxyfile and documentation
+
 - add default directory loading for static files
 - finish http protocol implementation
-- add asynchronous options and epoll
-
 - add websockets and file monitor for hot reloading
 - add typescript converter (with its own file monitoring)
-
-- add windows support
+- add asynchronous http
+- add windows support for http
 - add http client
 - add https support
 - add certbot functionality

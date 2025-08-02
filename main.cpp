@@ -58,6 +58,7 @@ int main() {
     http_server.route("/", Method::Get, handler, ContentType::Html);
     http_server.route("/css/app.css", Method::Get, handlerCss, ContentType::Css);
     http_server.route("/js/main.js", Method::Get, handlerJs, ContentType::JavaScript);
+    http_server.serveDir("./public");
     http_server.openBrowser();
     http_server.acceptClient();
 
